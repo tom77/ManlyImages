@@ -17,7 +17,7 @@ var workmap = {};
 var nulldatecount = 0;
 var titleyrcount = 0;
 
-var thumbprefix = "http://www.photosau.com.au/Manlylib/Jthumb/";
+var thumbprefix = "http://www.wyndhamhistory.net.au/files/thumbnails/";
 
 $(document).ready(function()
 {
@@ -26,7 +26,7 @@ $(document).ready(function()
 
 function loadXml(){// load from Trove
   console.log("loading page " + page + " of " + maxpages);
-  var url = "http://api.trove.nla.gov.au/result?key="+ apikey +"&zone=picture&q=%22Manly%20City%20Council%22&n=100&s=" + page*pagelen;
+  var url = "http://api.trove.nla.gov.au/result?key="+ apikey +"&zone=picture&q=%22wyndhamhistory%22&n=100&s=" + page*pagelen;
 
   $.get(url, function(data) {
     if ( page == 0){
